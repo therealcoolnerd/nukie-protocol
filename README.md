@@ -28,3 +28,14 @@ _If you don’t have access, don’t ask._
 ```sh
 git clone git@github.com:YOUR-ORG/nukie-protocol.git
 cd nukie-protocol
+
+```
+
+## GUI
+
+A minimal Tkinter-based GUI is included for early experimentation.
+
+Run it with:
+```sh
+python gui.py
+```
