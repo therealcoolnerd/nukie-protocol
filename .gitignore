@@ -1,0 +1,4 @@
+node_modules/
+packages/contracts/node_modules/
+packages/contracts/artifacts/
+packages/contracts/cache/
