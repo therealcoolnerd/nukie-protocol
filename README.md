@@ -130,17 +130,16 @@ Android is the initial target platform.
 
 ## 🧪 Running Tests
 
-Install the dependencies and run `pytest` for the Python modules. If you have
-Node.js installed you can also execute the React Native Jest suite:
+Install the dependencies and run the full test suite using the `npm test`
+command at the repository root. This runs both the Python tests via `pytest`
+and the React Native Jest suite:
 
 ```sh
 pip install -e .
 pip install -r requirements.txt
-pytest
-```
-```sh
 cd mobile
 npm install --legacy-peer-deps
+cd ..
 npm test
 ```
 Using `--legacy-peer-deps` here prevents peer dependency conflicts during installation.
