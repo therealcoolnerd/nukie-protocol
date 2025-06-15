@@ -44,6 +44,7 @@ Install Node dependencies for formatting hooks:
 
 ```sh
 npm install
+npm install @babel/runtime
 ```
 
 To manually run Prettier and ESLint on staged files:
@@ -73,6 +74,20 @@ from nukie_protocol import generate_did_key
 
 did = generate_did_key()
 print(did)
+```
+
+For JavaScript projects the repository exposes a companion helper at
+`src/utils/identity/cryptography.js`. It provides a `generateDIDKey()`
+function that returns the DID string along with the hex-encoded public and
+private keys:
+
+```js
+import { generateDIDKey } from "./src/utils/identity/cryptography";
+
+async function demo() {
+  const { did, publicKey, privateKey } = await generateDIDKey();
+  console.log(did, publicKey, privateKey);
+}
 ```
 
 ---
@@ -105,6 +120,7 @@ To try it out on Android:
 3. Install dependencies and start the development server for Android:
    ```sh
    npm install --legacy-peer-deps
+   # installs @noble/ed25519, bs58, buffer and @babel/runtime
    npx expo start
    ```
    The `--legacy-peer-deps` flag avoids peer dependency conflicts when installing packages.
@@ -123,6 +139,10 @@ async function setup() {
   console.log("Your DID:", did);
 }
 ```
+
+Because the mobile build relies on libraries that expect Node's `Buffer` global,
+`mobile/index.js` polyfills it by importing `buffer` and assigning
+`global.Buffer`.
 
 Android is the initial target platform.
 
