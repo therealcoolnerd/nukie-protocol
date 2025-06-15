@@ -50,3 +50,14 @@ python -m http.server --directory web 8000
 ```
 
 Then open [http://localhost:8000](http://localhost:8000) in your browser.
+
+---
+
+## 🧪 Running Tests
+
+Install the dependencies and run `pytest`:
+
+```sh
+pip install -r requirements.txt
+pytest
+```
