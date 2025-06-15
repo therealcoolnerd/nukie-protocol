@@ -23,10 +23,20 @@ We welcome forks, issues, and pull requests from anyone interested in improving 
 
 ## 🚀 Project Kickoff
 
+This repository uses a `pyproject.toml` configuration for packaging and
+defines the `nukie-identity` CLI script there.
+
 **Clone the repo:**
 ```sh
 git clone git@github.com:YOUR-ORG/nukie-protocol.git
 cd nukie-protocol
+```
+
+Install the project in editable mode using the configuration from
+`pyproject.toml`:
+
+```sh
+pip install -e .
 ```
 
 ---
@@ -34,7 +44,8 @@ cd nukie-protocol
 ## Identity Module
 
 The identity module provides a simple DID generator. After installing the
-package you can run the `nukie-identity` command to print a new `did:key` identifier:
+package (see the Project Kickoff section) you can run the `nukie-identity`
+command to print a new `did:key` identifier:
 
 ```sh
 nukie-identity
