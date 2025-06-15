@@ -62,3 +62,11 @@ Install the dependencies and run `pytest`:
 pip install -r requirements.txt
 pytest
 ```
+## 🧪 Running Tests
+
+Install the dependencies and run `pytest`:
+
+```sh
+pip install -r requirements.txt
+pytest
+```
