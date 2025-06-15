@@ -1,2 +1,3 @@
 cryptography
 base58
+pytest
