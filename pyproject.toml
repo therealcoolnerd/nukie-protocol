@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nukie-protocol"
+version = "0.1.0"
+dependencies = [
+    "cryptography",
+    "base58"
+]
+
+[project.scripts]
+nukie-identity = "identity:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["identity"]
+
