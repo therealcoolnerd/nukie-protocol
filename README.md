@@ -27,6 +27,7 @@ This repository uses a `pyproject.toml` configuration for packaging and
 defines the `nukie-identity` CLI script there.
 
 **Clone the repo:**
+
 ```sh
 git clone git@github.com:YOUR-ORG/nukie-protocol.git
 cd nukie-protocol
@@ -38,6 +39,7 @@ Install the project in editable mode using the configuration from
 ```sh
 pip install -e .
 ```
+
 Install Node dependencies for formatting hooks:
 
 ```sh
@@ -51,7 +53,6 @@ npx lint-staged
 ```
 
 Husky's pre-commit hook runs this automatically on commit.
-
 
 ---
 
@@ -97,6 +98,19 @@ To try it out on Android:
    npm install
    npx expo start
    ```
+
+The `mobile/identity.js` helper exposes `generateDidKey()` for generating a
+persistent `did:key` identifier. Import and call this function anywhere in your
+React Native code to obtain the DID.
+
+```js
+import generateDidKey from "./identity";
+
+async function setup() {
+  const did = await generateDidKey();
+  console.log("Your DID:", did);
+}
+```
 
 Android is the initial target platform.
 
