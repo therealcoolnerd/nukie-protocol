@@ -5,7 +5,7 @@ const STORAGE_KEY = "nukie-private-key";
 const MULTICODEC_ED25519_PREFIX = new Uint8Array([0xed, 0x01]);
 const ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 
-function base58Encode(bytes) {
+export function base58Encode(bytes) {
   if (!bytes.length) return "";
   const digits = [0];
   for (let i = 0; i < bytes.length; ++i) {
