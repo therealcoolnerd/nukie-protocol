@@ -1,35 +1,10 @@
-import generateDidKey from '../identity';
+import generateDidKey, { base58Encode } from '../identity';
 import * as SecureStore from 'expo-secure-store';
 import * as ed from '@noble/ed25519';
 jest.mock('expo-secure-store', () => ({ getItemAsync: jest.fn(), setItemAsync: jest.fn() }));
 describe('generateDidKey', () => {
   const STORAGE_KEY = 'nukie-private-key';
   const MULTICODEC_ED25519_PREFIX = new Uint8Array([0xed, 0x01]);
-  const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
-  const base58Encode = (bytes) => {
-    if (!bytes.length) return '';
-    const digits = [0];
-    for (let i = 0; i < bytes.length; ++i) {
-      let carry = bytes[i];
-      for (let j = 0; j < digits.length; ++j) {
-        const x = digits[j] * 256 + carry;
-        digits[j] = x % 58;
-        carry = Math.floor(x / 58);
-      }
-      while (carry) {
-        digits.push(carry % 58);
-        carry = Math.floor(carry / 58);
-      }
-    }
-    let output = '';
-    for (let k = 0; bytes[k] === 0 && k < bytes.length - 1; k++) {
-      output += ALPHABET[0];
-    }
-    for (let q = digits.length - 1; q >= 0; q--) {
-      output += ALPHABET[digits[q]];
-    }
-    return output;
-  };
   beforeAll(() => {
     ed.utils.bytesToHex = (b) => Buffer.from(b).toString("hex");
     const crypto = require("crypto");
