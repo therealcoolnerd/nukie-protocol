@@ -25,7 +25,7 @@ We welcome forks, issues, and pull requests from anyone interested in improving 
 
 **Clone the repo:**
 ```sh
-git clone git@github.com:YOUR-ORG/nukie-protocol.git
+git clone git@github.com:therealcoolnerd/nukie-protocol.git
 cd nukie-protocol
 ```
 
