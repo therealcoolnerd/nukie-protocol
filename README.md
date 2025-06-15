@@ -33,10 +33,10 @@ cd nukie-protocol
 
 ## Identity Module
 
-A simple DID generator is provided in `src/identity.py`. Run it to print a new `did:key` identifier:
+A simple DID generator is provided in `identity.py`. Run it to print a new `did:key` identifier:
 
 ```sh
-python src/identity.py
+python identity.py
 ```
 
 ---
