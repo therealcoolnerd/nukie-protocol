@@ -25,7 +25,7 @@ We welcome forks, issues, and pull requests from anyone interested in improving 
 
 **Clone the repo:**
 ```sh
-git clone git@github.com:therealcoolnerd/nukie-protocol.git
+git clone git@github.com:YOUR-ORG/nukie-protocol.git
 cd nukie-protocol
 ```
 
@@ -33,10 +33,11 @@ cd nukie-protocol
 
 ## Identity Module
 
-A simple DID generator is provided in `identity.py`. Run it to print a new `did:key` identifier:
+The identity module provides a simple DID generator. After installing the
+package you can run the `nukie-identity` command to print a new `did:key` identifier:
 
 ```sh
-python identity.py
+nukie-identity
 ```
 
 ---
@@ -53,6 +54,14 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ---
 
+## 🧪 Running Tests
+
+Install the dependencies and run `pytest`:
+
+```sh
+pip install -r requirements.txt
+pytest
+```
 ## 🧪 Running Tests
 
 Install the dependencies and run `pytest`:

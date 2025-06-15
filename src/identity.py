@@ -18,5 +18,10 @@ def generate_did_key() -> str:
     did = "did:key:z" + base58.b58encode(multicodec).decode()
     return did
 
-if __name__ == "__main__":
+
+def main() -> None:
+    """Console entrypoint for generating a new DID."""
     print(generate_did_key())
+
+if __name__ == "__main__":
+    main()
