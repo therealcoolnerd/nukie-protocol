@@ -131,8 +131,9 @@ Android is the initial target platform.
 ## 🧪 Running Tests
 
 Install the dependencies and run the full test suite using the `npm test`
-command at the repository root. This runs both the Python tests via `pytest`
-and the React Native Jest suite:
+command at the repository root. The `test` script is defined in
+`package.json` as `pytest && cd mobile && npm test`, so it first runs the
+Python tests via `pytest` and then executes the React Native Jest suite:
 
 ```sh
 pip install -e .
