@@ -104,9 +104,10 @@ To try it out on Android:
    ```
 3. Install dependencies and start the development server for Android:
    ```sh
-   npm install
+   npm install --legacy-peer-deps
    npx expo start
    ```
+   The `--legacy-peer-deps` flag avoids peer dependency conflicts when installing packages.
 
 The `mobile/identity.js` helper exposes a new `generateDidKey()` function for
 creating a persistent `did:key` identifier. Internally it stores the Ed25519
@@ -139,6 +140,7 @@ pytest
 ```
 ```sh
 cd mobile
-npm install
+npm install --legacy-peer-deps
 npm test
 ```
+Using `--legacy-peer-deps` here prevents peer dependency conflicts during installation.
