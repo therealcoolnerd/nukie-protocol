@@ -108,3 +108,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Node and Expo
+node_modules/
+*.expo/*
+# React Native build directories
+android/**/build/
+ios/**/build/
+# Expo debug log
+expo-debug.log
