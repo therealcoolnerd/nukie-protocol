@@ -65,6 +65,29 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ---
 
+## Mobile App (React Native + Expo)
+
+The repository includes a basic React Native project inside the `mobile/` directory.
+To try it out on Android:
+
+1. Install Node.js and the Expo CLI globally:
+   ```sh
+   npm install -g expo-cli
+   ```
+2. Navigate to the new `mobile/` folder:
+   ```sh
+   cd mobile
+   ```
+3. Install dependencies and start the development server for Android:
+   ```sh
+   npm install
+   npx expo start
+   ```
+
+Android is the initial target platform.
+
+---
+
 ## 🧪 Running Tests
 
 Install the dependencies and run `pytest`:
