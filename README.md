@@ -99,9 +99,11 @@ To try it out on Android:
    npx expo start
    ```
 
-The `mobile/identity.js` helper exposes `generateDidKey()` for generating a
-persistent `did:key` identifier. Import and call this function anywhere in your
-React Native code to obtain the DID.
+The `mobile/identity.js` helper exposes a new `generateDidKey()` function for
+creating a persistent `did:key` identifier. Internally it stores the Ed25519
+private key in [`expo-secure-store`](https://docs.expo.dev/versions/latest/sdk/securestore/)
+so the DID remains stable across app restarts. Import and call this function
+anywhere in your React Native code to obtain the DID.
 
 ```js
 import generateDidKey from "./identity";
@@ -118,10 +120,16 @@ Android is the initial target platform.
 
 ## 🧪 Running Tests
 
-Install the dependencies and run `pytest`:
+Install the dependencies and run `pytest` for the Python modules. If you have
+Node.js installed you can also execute the React Native Jest suite:
 
 ```sh
 pip install -e .
 pip install -r requirements.txt
 pytest
+```
+```sh
+cd mobile
+npm install
+npm test
 ```
