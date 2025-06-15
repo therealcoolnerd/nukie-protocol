@@ -1,0 +1,29 @@
+{
+  "name": "nukie-protocol",
+  "version": "1.0.0",
+  "description": "**Welcome to the future of Diaspora social.** The goal of Nukie is to build a secure, AI-powered and decentralized platform for the global Black Diaspora. This project is developed openly and welcomes community participation.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}

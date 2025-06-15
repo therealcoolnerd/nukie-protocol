@@ -38,6 +38,20 @@ Install the project in editable mode using the configuration from
 ```sh
 pip install -e .
 ```
+Install Node dependencies for formatting hooks:
+
+```sh
+npm install
+```
+
+To manually run Prettier and ESLint on staged files:
+
+```sh
+npx lint-staged
+```
+
+Husky's pre-commit hook runs this automatically on commit.
+
 
 ---
 
