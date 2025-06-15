@@ -1,30 +1,29 @@
 # Nukie Protocol — Scroll Your Culture
 
-**Welcome to the future of Diaspora social.**
-This repo is strictly private. If you’re not OG, you’re not in.
-Nukie is the world’s first protocol and platform for the global Black Diaspora—secure, AI-powered, decentralized, and built for us, by us. No bias, no outsiders, no culture vultures.
+**Welcome to the future of Diaspora social.** The goal of Nukie is to build a secure, AI-powered and decentralized platform for the global Black Diaspora. This project is developed openly and welcomes community participation.
 
 ---
 
 ## 🚧 Status
 
-This project is under private, closed-door development.
-**All code, ideas, and assets are proprietary and confidential.**
-_If you don’t have access, don’t ask._
+This project is under active development.
 
 ---
 
-## 🔒 Private Repo Rules
+## 🤝 Contributing
 
-- **No forks. No clones. No outside contributions.**
-- All rights reserved. This is not open source (yet).
-- Only trusted team members will ever see this code.
+We welcome forks, issues, and pull requests from anyone interested in improving the project. To get started:
+
+1. Fork the repository on GitHub.
+2. Create a new branch for your changes (`git checkout -b feature/my-feature`).
+3. Commit and push your code.
+4. Open a pull request describing your contribution.
 
 ---
 
 ## 🚀 Project Kickoff
 
-**Clone the repo (team only):**
+**Clone the repo:**
 ```sh
 git clone git@github.com:YOUR-ORG/nukie-protocol.git
 cd nukie-protocol
