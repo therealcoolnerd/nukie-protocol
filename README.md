@@ -119,7 +119,7 @@ To try it out on Android:
 3. Install dependencies and start the development server for Android:
    ```sh
    npm install --legacy-peer-deps
-   # installs @noble/ed25519, bs58 and buffer
+   # installs @noble/ed25519, bs58, buffer and react-native-get-random-values
    npx expo start
    ```
    The `--legacy-peer-deps` flag avoids peer dependency conflicts when installing packages. Running this command in `mobile/` installs all required packages, including `@babel/runtime`.
