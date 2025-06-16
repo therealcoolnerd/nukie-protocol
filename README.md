@@ -44,7 +44,6 @@ Install Node dependencies for formatting hooks:
 
 ```sh
 npm install
-npm install @babel/runtime
 ```
 
 To manually run Prettier and ESLint on staged files:
@@ -120,10 +119,10 @@ To try it out on Android:
 3. Install dependencies and start the development server for Android:
    ```sh
    npm install --legacy-peer-deps
-   # installs @noble/ed25519, bs58, buffer and @babel/runtime
+   # installs @noble/ed25519, bs58 and buffer
    npx expo start
    ```
-   The `--legacy-peer-deps` flag avoids peer dependency conflicts when installing packages.
+   The `--legacy-peer-deps` flag avoids peer dependency conflicts when installing packages. Running this command in `mobile/` installs all required packages, including `@babel/runtime`.
 
 The `mobile/identity.js` helper exposes a new `generateDidKey()` function for
 creating a persistent `did:key` identifier. Internally it stores the Ed25519
