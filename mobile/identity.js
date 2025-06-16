@@ -1,3 +1,4 @@
+import 'react-native-get-random-values';
 import * as ed from "@noble/ed25519";
 import * as SecureStore from "expo-secure-store";
 
