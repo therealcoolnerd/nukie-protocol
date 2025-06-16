@@ -21,6 +21,12 @@ We welcome forks, issues, and pull requests from anyone interested in improving 
 
 ---
 
+## 🔒 Security
+
+Please report any security vulnerabilities responsibly. See our [security policy](SECURITY.md) for instructions on how to submit a private report.
+
+---
+
 ## 🚀 Project Kickoff
 
 This repository uses a `pyproject.toml` configuration for packaging and
