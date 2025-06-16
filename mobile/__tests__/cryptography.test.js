@@ -1,4 +1,4 @@
-import { generateDIDKey } from '../../src/utils/identity/cryptography';
+import { generateDIDKey } from '../utils/identity/cryptography';
 import * as ed from '@noble/ed25519';
 
 beforeAll(() => {

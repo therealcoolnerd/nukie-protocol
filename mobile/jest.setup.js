@@ -14,3 +14,5 @@ extraPaths.forEach((p) => {
     Module.Module.globalPaths.push(p);
   }
 });
+
+global.__DEV__ = true;
