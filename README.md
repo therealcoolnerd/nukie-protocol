@@ -69,7 +69,7 @@ nukie-identity
 You can also generate a DID programmatically from the package API:
 
 ```python
-from nukie_protocol import generate_did_key
+from identity import generate_did_key
 
 did = generate_did_key()
 print(did)
