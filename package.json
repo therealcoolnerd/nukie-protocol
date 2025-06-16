@@ -16,6 +16,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@babel/runtime": "^7.27.6",
+    "@noble/ed25519": "^2.3.0",
+    "bs58": "^6.0.0",
     "eslint": "^9.29.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",

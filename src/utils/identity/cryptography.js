@@ -1,9 +1,10 @@
-import * as ed from "@noble/ed25519";
-import bs58 from "bs58";
+const ed = require("@noble/ed25519");
+const bs58pkg = require("bs58");
+const bs58 = bs58pkg.encode ? bs58pkg : bs58pkg.default;
 
 const MULTICODEC_ED25519_PREFIX = new Uint8Array([0xed, 0x01]);
 
-export async function generateDIDKey() {
+async function generateDIDKey() {
   const privateKey = ed.utils.randomPrivateKey();
   const publicKey = await ed.getPublicKey(privateKey);
   const multicodec = new Uint8Array(
@@ -19,4 +20,6 @@ export async function generateDIDKey() {
   };
 }
 
-export default generateDIDKey;
+module.exports = {
+  generateDIDKey,
+};

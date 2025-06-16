@@ -3,7 +3,8 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(expo-secure-store|@noble/ed25519)/)'
+    'node_modules/(?!(expo-secure-store|@noble/ed25519)/)',
+    '../src/utils/identity/cryptography.js'
   ],
   setupFiles: ['<rootDir>/jest.setup.js'],
   moduleDirectories: ['node_modules', '../node_modules'],
