@@ -46,6 +46,14 @@ Install Node dependencies for formatting hooks:
 npm install
 ```
 
+This will automatically configure Git hooks via Husky using the `prepare` script.
+
+If hooks are missing, run:
+
+```sh
+npm run prepare
+```
+
 To manually run Prettier and ESLint on staged files:
 
 ```sh
