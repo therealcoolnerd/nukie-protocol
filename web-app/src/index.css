@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gradient-to-br from-nukie-purple via-cultural-sky to-nukie-green text-white;
+    @apply min-h-screen font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-nukie-red to-nukie-gold text-white font-semibold py-3 px-6 rounded-full;
+    @apply hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply glass text-white font-medium py-2 px-4 rounded-lg;
+    @apply hover:bg-white/20 transition-all duration-200;
+  }
+  
+  .card {
+    @apply glass rounded-xl p-6 shadow-xl;
+  }
+  
+  .input {
+    @apply glass rounded-lg px-4 py-3 text-white placeholder-white/70;
+    @apply focus:outline-none focus:ring-2 focus:ring-nukie-gold/50;
+  }
+}

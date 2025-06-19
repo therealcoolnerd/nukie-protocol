@@ -1,4 +1,4 @@
-# Nukie Protocol — Scroll Your Culture
+You doing the # Nukie Protocol — Scroll Your Culture
 
 **Welcome to the future of Diaspora social.** The goal of Nukie is to build a secure, AI-powered and decentralized platform for the global Black Diaspora. This project is developed openly and welcomes community participation.
 
